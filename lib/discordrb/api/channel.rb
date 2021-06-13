@@ -88,6 +88,7 @@ module Discordrb::API::Channel
 
         }
     ] }
+    puts "wip: #{body}"
     body = if attachments
              files = [*0...attachments.size].zip(attachments).to_h
              { **files, payload_json: body.to_json }
